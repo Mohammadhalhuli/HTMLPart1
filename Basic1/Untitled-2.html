@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic</title>
+        
+        <link rel="alternate" href="atom.xml" type="application/atom+xml" title="Atom">
+        
+        <style>
+            html{
+                background-image: url("1.png.png");
+                /*background-repeat:f ;*/
+                background-size:cover ;
+                background-attachment:fixed ;
+            }
+            body{
+              /*  background-color: blue;*/
+                /*color: white;*/
+            }
+            #h1{
+                background-color: blueviolet;
+                background: linear-gradient(red,yellow,orange);
+                color: brown;
+            }
+            header{
+                display:table-row-group;
+                background-color: rgb(122, 34, 34);
+            }
+            p{
+                /*background-color: blue;*/
+               /* padding: 5px;
+                border-style:outset ;*/
+               /* border: 1px solid;
+                width: 300px;*/
+                /*padding-left: 25%;*/
+               /* padding: 25px;*/
+            }
+            #p1{
+              /*  transform: translate(100px,100px);*/
+                
+/*****************************************************************/
+                /**لقلب النص */
+               /* transform: rotateX(180deg);
+                transform: rotateX(180deg);
+                transform: rotateX(180deg);*/
+
+
+/*****************************************************************/
+
+/*****************************************************************/
+
+                /**لتعريض في النص والتنحيف */
+                /*transform: scaleX(1.5);*/
+/*****************************************************************/
+               /* transform: translateX(50px);
+                transform: translateY(50px);*/
+              /*  margin-left: 250px;*/
+            }
+            #p2{
+               /* margin: 50%;*/
+              /* transform: translateX(50px);
+                transform: translateY(50px);*/
+            }
+            #p3{
+               /* margin: auto;*/
+              /* transform: translateX(50px);
+                transform: translateY(50px);*/
+            }
+
+            h2{
+                border: 1px solid;
+                width: 200px;
+                padding: 25px;
+                text-shadow: 0px 5px 0px red , 0px -5px 5px;
+                box-shadow: 10px 10px 5px black;
+            }
+            a:link{
+                color: aqua;
+            }
+            a:valid{
+                color: chartreuse;
+            }
+            button{
+                background-size: 100px;
+            }
+            button:valid{
+                background-color: forestgreen;
+                
+                color: rgb(190, 119, 106);
+            }
+            #pv{
+                width: 100px;
+                height: 100px;
+                background: red;
+                font-size: 85px;
+                text-align: center;
+                margin: 0px;
+                animation: myColorAnimation;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+              /*  animation: Rotaiton;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;*/
+            }
+            @keyframes myColorAnimation{
+                form{background: red;}
+                to{background: green;}
+                0%{background-color: red;}
+                20%{background-color: orange;}
+                40%{background-color: yellow;}
+                80%{background-color: green;}
+                100%{background-color: blue;
+                        transform: rotate(360deg);}
+            }
+            @keyframes Rotaiton{
+              /*  100%{transform: rotate(20deg);}
+                0%{background-color: red;}
+                20%{background-color: orange;}*/
+            }
+         ul{
+            list-style-type: none;
+ padding:0px;
+ margin: 0px;
+ overflow: hidden;
+ background-color: #444444;
+}
+li a{
+ float: left;
+ display: block;
+ color: white;
+ padding: 10px 15px;
+ text-align: center;
+ text-decoration:none;
+ border-right: 1px solid black;
+ min-width:60px;
+ animation: myGlowAnimation;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+}
+    li a:hover{
+    background-color: #222222;
+
+    animation: myGlowAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes myGlowAnimation{
+     50% {text-shadow: 0px 0px 10px yellow;}
+    }  
+        </style>
+  </head>
+    <body class="body" >
+    
+        <h1 id="h1">  A Generic Page</h1>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+        <p id="p1"> Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.
+
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+        <p id="p2"> Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.
+
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+        <p id="p3">Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.
+
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+        
+
+        <h2 class="h"> Halhuli</h2>
+        <a href="https://www.w3docs.com/snippets/html/how-to-add-an-image-in-the-title-bar.html"> click --></a>
+        <br>
+        <br>
+        <button><a href="https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwj2jJ_J4ojyAhU0oVwKHR8XDQkQPQgJ">Google</a></button>
+        <p id="pv">Hi</p>
+                </body>
+</html>

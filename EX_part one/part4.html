@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Home </title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body{
+                background-image: url("images.png");
+                background-size: cover;
+                background-position: center;
+               
+                font-family: sans-serif;
+            }
+            .menu-bar{
+                background: rgb(0, 100,0);
+                text-align: center;
+            }
+            .menu-bar ul{
+                display: inline-flex;
+                list-style: none;
+                padding: 10px 15px;
+                color: #fff;
+
+            }
+            .menu-bar ul li {
+                width: 120px;
+                margin: 15px;
+                padding: 15px;
+
+            }
+            .menu-bar ul li a{
+                text-decoration: none;
+                color: #fff;
+
+            }
+            .home, .menu-bar ul li:hover{
+                background: rgb(13, 0, 128);
+                border-radius: 3px;
+            }
+            .div_one{
+                display: none;
+
+            }
+            .menu-bar ul li:hover .div_one{
+                display: block;
+                position: absolute;
+                background: green;
+                margin-top: 15px;
+                margin-left: -15px;
+            }
+            .menu-bar ul li :hover .div_one ul{
+                display: block;
+                margin: 10px;
+            }
+            .menu-bar ul li :hover .div_one ul li{
+                width: 150px;
+                padding: 10px;
+                border-bottom: 1px dotted green;
+                background: transparent;
+                border-radius: 0;
+                text-align: left;
+            }
+            .div_onee{
+                display: none;
+
+            }
+            .div_one ul li:hover .div_onee{
+                display: block;
+                position: absolute;
+                background: green;
+                margin-top: 15px;
+                margin-left: -15px;
+            }
+            .div_one ul li :hover .div_onee ul{
+                display: block;
+                margin: 10px;
+            }
+            .div_one ul li :hover .div_onee ul li{
+                width: 150px;
+                padding: 10px;
+                border-bottom: 1px dotted green;
+                background: transparent;
+                border-radius: 0;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu-bar">
+        <ul>
+            <li class="Home"> <a href="#"><i class="fas fa-building"></i> Home</a> </li>
+            <li>
+                <a href="#"> About Us</a> 
+                <div class="div_one">
+                    <ul>
+                        <li><a href="#"> main</a></li>
+                        <li><a href="#"> vision</a></li>
+                        <li>
+                            <a href="#"> Team</a>
+                            <div class="div_onee">
+                                <ul>
+                                    <li><a href="#"> main</a></li>
+                                    <li><a href="#"> vision</a></li>
+                                    <li><a href="#"> Team</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li> <a href="#">services</a> </li>
+            <li> <a href="#">clients</a> </li>
+            <li> <a href="#">Investters</a> </li>
+            <li> <a href="#">pricing</a> </li>
+            <li> <a href="#">Training </a></li>
+            <li> <a href="#">contact</a> </li>
+        </ul>
+    </div>
+    </body>
+</html>

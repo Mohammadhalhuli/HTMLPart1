@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="alternate" href="atom.xml" type="application/atom+xml" title="Atom">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta name="description" content="">
+        <title>part two</title>  
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                background: #34495e;
+                font-family: sans-serif;
+            }
+            .form{
+                width: 300px;
+                height: 300px;
+                position: absolute;
+                left: 500px;
+                top: 200px;
+                background: #191919;
+               /* transform: translate(-50%,-50%);*/
+               text-align: center;
+            }
+            .form input[type="text"],.form input[type="password"]{
+                border: 0px;
+                background: none;
+                display: block;
+                margin: 20px auto;
+                text-align: center;
+                border: 2px solid red;
+                padding: 14px,10px;
+                width: 200px;
+                outline: none;
+                color: seashell;
+                border-radius: 24px;
+                transition: 5s;
+            }
+            .form input[type="text"]:focus,.form input[type="password"]:focus{
+                width: 250px;
+                border-color: green;
+            }
+            .form input[type="submit"]{
+                border: 0px;
+                background: none;
+                display: block;
+                margin: 10px auto;
+                text-align: center;
+                border: 2px solid rgb(0, 225, 255);
+                padding: 5px,5px;
+                width: 100px;
+                outline: none;
+                color: seashell;
+                border-radius: 24px;
+                transition: 5s;
+            }
+            .form input[type="submit"]:hover{
+                background: hotpink;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="form" action="index.html" method="get">
+            <h1>Login</h1>
+            <input type="text" placeholder="userName" value="">
+            <input type="password" placeholder="password" value="">
+            <input type="submit" placeholder="Longin" value="Login">
+            <input type="email" placeholder="email">
+        </form>
+    </body>
+</html>

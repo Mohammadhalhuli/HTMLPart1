@@ -1,0 +1,14 @@
+from{
+    color: green;
+}
+.DIV{
+    width: 200px;
+    height: 200px;
+    background: green;
+    border-width:10px ;
+    border-color:red ;
+    border-style: solid;
+}
+input{
+    background-color: white;
+    }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+            background: url(images.png)no-repeat;
+            background-size: cover;
+        }
+        .lonin{
+            width: 280px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+        }
+        .lonin h1{
+            float: left;
+            font-size: 40px;
+            border-bottom: 6px solid #4caf50;
+            margin-bottom: 50px;
+            padding: 13px 0;
+        }
+        .textbox{
+            width: 100%;
+            overflow: hidden;
+            font-size: 20px;
+            padding: 8px 0;
+            margin: 8px;
+            border-bottom: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="lonin">
+        <h1>Longin</h1>
+        <div class="textbox">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="UserName">
+        </div>
+        <div class="textbox">
+            <i class="fas fa-unlock-alt"></i>
+            <input type="password" placeholder="password">
+        </div>
+        <input class="button"type="button" value="sign in">
+    </div>
+</body>
+</html>

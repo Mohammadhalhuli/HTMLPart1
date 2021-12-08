@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            overflow: hidden;
+            font-family: sans-serif;
+            background: cadetblue;
+            height: 100vh;
+        }
+        #sidebarMenu{
+            height: 100%;
+            position: fixed;left: 0px;
+            top: 0;
+            width: 250px;
+            background-color: black;
+            padding-top: 60px;
+            transform: translateX(-250px);
+            transition: transform 250ms ease-in-out;
+        }
+        ul{
+            list-style: none;
+        }
+        .menu{
+            list-style: none;
+        }
+        .bar-img{
+            max-width: 140px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .menu li:nth-child(1){
+            text-align: center;
+        }
+        ul li{
+            border-bottom: 1px solid rgb(red, green, blue);
+        }
+        ul li:hover{
+            background: #55b39b;
+        }
+        ul li a{
+            color: white;
+            display: block;
+            padding: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        #openMenu:checked~#sidebarMenu{
+            transform: translateX(0);
+        }
+        input#openMenu{
+            display: none;
+        }
+        .sidebarico{
+            padding: 10px;
+            background: black;
+            height: 34px;
+            width: 45px;
+            position: absolute;
+            z-index: 99;
+            top: 22px;
+            left: 15px;
+            transition: all 0.4s;
+            cursor: pointer;
+        }
+
+        .spinner{
+            height: 3px;
+            background: red;
+            transition:all 0.3s ;
+
+        }
+        .spinner.middle,.spinner.bottom{
+            margin-top: 3px;
+        }
+        #openMenu:checked~.sidebarico>.spinner.top{
+            transform: rotate(135deg);
+        }
+        #openMenu:checked~.sidebarico>.spinner.middle{
+            opacity: 0;
+        }
+        #openMenu:checked~.sidebarico>.spinner.bottom{
+            transform: rotate(-135deg);
+            margin-top: -9px;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="" id="openMenu">
+    <label for="openMenu" class="sidebarico">
+        <div class="top"></div>
+        <div class="middle"></div>
+        <div class="bottom"></div>
+    </label>
+    <div id="sidebarMenu">
+        <ul>
+            <li><a href="#"> <img src="me.png" alt="" class="bar-img"></a></li>
+            <li><a href="#"> <span><i class="fas fa-user"></i></span> Home </a></li>
+            <li><a href="#"> <span><i class="far fa-address-book"></i></span> User Basil </a></li>
+            <li><a href="#"> <span><i class="fas fa-home"></i></span> Home </a></li>
+            <li><a href="#"> <span><i class="fas fa-home"></i></span> Home </a></li>
+            <li><a href="#"> <span><i class="fas fa-home"></i></span> Home </a></li>
+        </ul>
+    </div>
+</body>
+</html>

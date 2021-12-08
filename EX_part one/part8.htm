@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background: linear-gradient(to right,#2c5364,#0f2027);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .photo{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: rotate 30s linear infinite;
+        }
+        @keyframes rotate{
+        0% {
+            transform:perspective(1000px) rotateY(0deg);
+        }
+        100% {
+            transform:perspective(1000px) rotateY(0deg);
+        }
+    }
+    .photo span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+    }
+    .photo span img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+        object-fit: cover;
+        transition: 2s;
+    }
+    .photo span:hover img{
+        transform: translateY(-50px) scale(1.2);
+    }
+    </style>
+</head>
+<body>
+    <div class="photo">
+        <span style="--i:1;"><img src="1.png.png" alt=""></span>
+        <!--<span style="--i:2"><img src="facebook.png" alt=""></span>-->
+        <span style="--i:3"><img src="images.png" alt=""></span>
+        <span style="--i:4"><img src="inst.png" alt=""></span>
+        <span style="--i:5"><img src="link.png" alt=""></span>
+       <!-- <span style="--i:6"><img src="message.png" alt=""></span>-->
+        <span style="--i:7"><img src="map.png" alt=""></span>
+    </div>
+</body>
+</html>
